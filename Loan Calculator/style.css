@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+.loan-calculator{
+    font-family: 'Times New Roman', Times, serif;
+    width: 800px;
+    margin: 25px auto;
+    box-shadow: 0 12px 50px -11px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    color: rgb(92, 3, 3);
+}
+.top{
+    background-color: black;
+    color: antiquewhite;
+    padding: 30px;
+    border: transparent;
+    border-radius: 10px;
+}
+.top.h2{
+    margin-top: 0;
+}
+form{
+    display: flex;
+    justify-content: space-between;
+    gap:8px ;
+}
+.tittle{
+    margin: 10px 0;
+    font-size: 20px;
+}
+input{
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    padding: 8px;
+    font-size: 15px;
+}
+.result{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right{
+    width: 50%;
+    height: 300px;
+}
+.left{
+    width: 50%;
+    padding: 10px 30px;
+}
+h3{
+    font-size: 15px;
+
+}
+.value{
+    font-size: 23px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(20,33,61,0.2);
+}
+.btn{
+    margin: 20px 0px;
+    padding:15px 30px;
+    border-radius: 10px;
+    background-color: azure;
+    color: black;
+    cursor: pointer;
+    
+}
+
+.btn:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.value::before{
+    content: "$";
+}
+
+@media (max-width:650px){
+    .loan-calculator{
+        width: 90%;
+        max-width: 500px;
+    }
+    .loan-calculator form{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .loan-calculator .result{
+        flex-direction: column;
+        text-align: center;
+    }
+}
